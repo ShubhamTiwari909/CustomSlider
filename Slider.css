@@ -1,0 +1,30 @@
+.containers {
+    height: 100vh;
+    width: 100%;
+}
+
+.slideButton {
+    font-size: 3rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.slideButton:hover {
+    transform: rotate(360deg) scale(1.3);
+}
+
+@media screen and (min-width:200px) and (max-width:400px) {
+    .slideButton{
+        font-size: 0.4rem;
+    }
+    .containers{
+        height: 30vh;
+    }
+}
+@media screen and (max-width:800px) {
+    .slideButton{
+        font-size: 2rem;
+    }
+    .containers {
+        height: 60vh;
+    }
+}
